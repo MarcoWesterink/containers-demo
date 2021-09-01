@@ -1,9 +1,9 @@
 dependencies:
-- name: postgresql
-  repository: ""
-  version: 10.9.4
 - name: grafana
   repository: ""
   version: 6.16.3
-digest: sha256:88d6f95009d53bebef635ea349b904d98a1f3d72b26c1183b050cfdd54acf773
-generated: "2021-09-01T10:55:13.9965648+02:00"
+- name: loki
+  repository: ""
+  version: 2.6.0
+digest: sha256:087dd6b1cd55fe8a59aba02cfa03024845c26dedabeab6fded8aa59e2a7164b1
+generated: "2021-09-01T16:11:35.7314265+02:00"

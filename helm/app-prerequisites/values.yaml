@@ -2,6 +2,7 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
+enabled: false
 replicaCount: 1
 
 image:
@@ -83,6 +84,18 @@ tolerations: []
 affinity: {}
 
 grafana:  
+  rbac:
+    create: false
+    pspEnabled: false
+  securityContext:
+    runAsUser: 1001590001
+  ingress:
+    enabled: true
+    hosts:
+     - overrideMeWithCommandlineSet # --set grafana.ingress.hosts[0]=fqdn
+  adminPassword: overrideMeWithCommandlineSet # --set grafana.adminPassword=somepassword
+
+loki:  
   rbac:
     create: false
     pspEnabled: false
