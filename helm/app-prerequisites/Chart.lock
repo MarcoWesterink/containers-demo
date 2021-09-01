@@ -1,0 +1,9 @@
+dependencies:
+- name: postgresql
+  repository: ""
+  version: 10.9.4
+- name: grafana
+  repository: ""
+  version: 6.16.3
+digest: sha256:88d6f95009d53bebef635ea349b904d98a1f3d72b26c1183b050cfdd54acf773
+generated: "2021-09-01T10:55:13.9965648+02:00"

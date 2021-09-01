@@ -35,7 +35,7 @@ namespace app.Controllers
                 _logger.LogError(ex, "An unknown error occurred on the Privacy action of the HomeController");
                 throw;
             }
-            return View();
+            //return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

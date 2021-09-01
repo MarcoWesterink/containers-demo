@@ -1,25 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\repos\\rubicon\\containers-demo\\dotnetapp\\app.csproj": {}
+    "C:\\workspace\\temp\\containers-demo\\dotnetapp\\app.csproj": {}
   },
   "projects": {
-    "D:\\repos\\rubicon\\containers-demo\\dotnetapp\\app.csproj": {
+    "C:\\workspace\\temp\\containers-demo\\dotnetapp\\app.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\repos\\rubicon\\containers-demo\\dotnetapp\\app.csproj",
+        "projectUniqueName": "C:\\workspace\\temp\\containers-demo\\dotnetapp\\app.csproj",
         "projectName": "app",
-        "projectPath": "D:\\repos\\rubicon\\containers-demo\\dotnetapp\\app.csproj",
-        "packagesPath": "C:\\Users\\Jeffrey\\.nuget\\packages\\",
-        "outputPath": "D:\\repos\\rubicon\\containers-demo\\dotnetapp\\obj\\",
+        "projectPath": "C:\\workspace\\temp\\containers-demo\\dotnetapp\\app.csproj",
+        "packagesPath": "C:\\Users\\MarcoWesterink\\.nuget\\packages\\",
+        "outputPath": "C:\\workspace\\temp\\containers-demo\\dotnetapp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Jeffrey\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\MarcoWesterink\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,9 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://azuresdkartifacts.blob.core.windows.net/azure-sdk-for-net/index.json": {},
-          "https://movares-ta.pkgs.visualstudio.com/_packaging/Movares/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
@@ -47,6 +40,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "EFCore.NamingConventions": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.9, )"
@@ -59,13 +56,13 @@
               "target": "Package",
               "version": "[5.0.9, )"
             },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[5.0.9, )"
-            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[5.0.9, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[5.0.7, )"
             },
             "Serilog.AspNetCore": {
               "target": "Package",
@@ -102,7 +99,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.206\\RuntimeIdentifierGraph.json"
         }
       }
     }
