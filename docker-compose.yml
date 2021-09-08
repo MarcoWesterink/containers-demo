@@ -12,8 +12,6 @@ services:
     depends_on:
       - db
       - elastic
-    networks:
-      - elastic
 
   db:
     image: "mcr.microsoft.com/mssql/server"
@@ -23,8 +21,6 @@ services:
     environment:
       SA_PASSWORD: "Your_password123"
       ACCEPT_EULA: "Y"
-    networks:
-      - elastic
   
   elastic:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.14.0
@@ -53,13 +49,7 @@ services:
     environment:
       ELASTICSEARCH_URL: http://elastic:9200
       ELASTICSEARCH_HOSTS: '["http://elastic:9200"]'
-    networks:
-      - elastic
 
 volumes:
   data01:
     driver: local
-
-networks:
-  elastic:
-    driver: bridge
