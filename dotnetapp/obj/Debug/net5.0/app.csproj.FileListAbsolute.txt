@@ -182,6 +182,5 @@ C:\workspace\temp\containers-demo\dotnetapp\obj\Debug\net5.0\ref\app.dll
 C:\workspace\temp\containers-demo\dotnetapp\obj\Debug\net5.0\app.pdb
 C:\workspace\temp\containers-demo\dotnetapp\obj\Debug\net5.0\app.genruntimeconfig.cache
 C:\workspace\temp\containers-demo\dotnetapp\bin\Debug\net5.0\EFCore.NamingConventions.dll
-C:\workspace\temp\containers-demo\dotnetapp\bin\Debug\net5.0\Serilog.Sinks.Http.dll
-C:\workspace\temp\containers-demo\dotnetapp\bin\Debug\net5.0\Serilog.Sinks.Loki.dll
-C:\workspace\temp\containers-demo\dotnetapp\bin\Debug\net5.0\Serilog.Sinks.RollingFile.dll
+C:\workspace\temp\containers-demo\dotnetapp\bin\Debug\net5.0\Serilog.Sinks.Grafana.Loki.dll
+C:\workspace\temp\containers-demo\dotnetapp\bin\Debug\net5.0\System.Text.Json.dll
