@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "z+iJF87JjkE/iKlcPWHrtz0uvurfn9//ZL5X7MspmzXF4PRqN/6xmXhSusP51pW9D6yecv9/icd/YVxs+AIo8g==",
+  "dgSpecHash": "od9HqhpKRp92kgrQcIu3WarsQG6/k8wDZauaM/wbNEZVS3rhsyScRUlDpIjSgmzw1tELkrllHt6xJG8kpNfrIA==",
   "success": true,
   "projectFilePath": "C:\\workspace\\temp\\containers-demo\\dotnetapp\\app.csproj",
   "expectedPackageFiles": [
@@ -56,6 +56,7 @@
     "C:\\Users\\MarcoWesterink\\.nuget\\packages\\serilog.sinks.debug\\2.0.0\\serilog.sinks.debug.2.0.0.nupkg.sha512",
     "C:\\Users\\MarcoWesterink\\.nuget\\packages\\serilog.sinks.elasticsearch\\8.4.1\\serilog.sinks.elasticsearch.8.4.1.nupkg.sha512",
     "C:\\Users\\MarcoWesterink\\.nuget\\packages\\serilog.sinks.file\\4.1.0\\serilog.sinks.file.4.1.0.nupkg.sha512",
+    "C:\\Users\\MarcoWesterink\\.nuget\\packages\\serilog.sinks.grafana.loki\\7.0.2\\serilog.sinks.grafana.loki.7.0.2.nupkg.sha512",
     "C:\\Users\\MarcoWesterink\\.nuget\\packages\\serilog.sinks.periodicbatching\\2.1.1\\serilog.sinks.periodicbatching.2.1.1.nupkg.sha512",
     "C:\\Users\\MarcoWesterink\\.nuget\\packages\\system.appcontext\\4.1.0\\system.appcontext.4.1.0.nupkg.sha512",
     "C:\\Users\\MarcoWesterink\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
@@ -93,6 +94,7 @@
     "C:\\Users\\MarcoWesterink\\.nuget\\packages\\system.runtime.serialization.primitives\\4.1.1\\system.runtime.serialization.primitives.4.1.1.nupkg.sha512",
     "C:\\Users\\MarcoWesterink\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
     "C:\\Users\\MarcoWesterink\\.nuget\\packages\\system.text.encoding.extensions\\4.0.11\\system.text.encoding.extensions.4.0.11.nupkg.sha512",
+    "C:\\Users\\MarcoWesterink\\.nuget\\packages\\system.text.json\\5.0.2\\system.text.json.5.0.2.nupkg.sha512",
     "C:\\Users\\MarcoWesterink\\.nuget\\packages\\system.text.regularexpressions\\4.1.0\\system.text.regularexpressions.4.1.0.nupkg.sha512",
     "C:\\Users\\MarcoWesterink\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\MarcoWesterink\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",

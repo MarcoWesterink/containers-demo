@@ -79,6 +79,10 @@
             "Serilog.Sinks.Elasticsearch": {
               "target": "Package",
               "version": "[8.4.1, )"
+            },
+            "Serilog.Sinks.Grafana.Loki": {
+              "target": "Package",
+              "version": "[7.0.2, )"
             }
           },
           "imports": [

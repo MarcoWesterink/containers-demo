@@ -115,6 +115,6 @@ postgres:
     chmod:
       enabled: false
   
-  postgresqlUsername: postgres
-  postgresqlPassword: postgres
-  postgresqlDatabase: postgres
+  # postgresqlUsername: postgres
+  # postgresqlPassword: postgres
+  # postgresqlDatabase: postgres
