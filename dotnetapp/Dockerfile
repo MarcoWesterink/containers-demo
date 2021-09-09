@@ -9,6 +9,7 @@ RUN dotnet publish -c release -o /app --no-restore
 
 # Run image from aspnet container
 FROM mcr.microsoft.com/dotnet/aspnet:5.0
+RUN apt-get update; apt-get install -y curl
 WORKDIR /app
 COPY --from=build /app ./
 EXPOSE 8080/tcp
