@@ -62,7 +62,7 @@ namespace app
                 .WriteTo.Debug()
                 .WriteTo.Console()
                 //.WriteTo.Elasticsearch(ConfigureElasticSink(configuration, environment))
-                .WriteTo.GrafanaLoki("http://test-loki.m-westerink-dev.svc.cluster.local:3100")
+                .WriteTo.GrafanaLoki("http://test-loki.m-westerink-dev.svc.cluster.local:3100", textFormatter: new LokiJsonTextFormatter())
                 .Enrich.WithProperty("Environment", environment)
                 .ReadFrom.Configuration(configuration)
                 .CreateLogger();
