@@ -14,6 +14,7 @@ WORKDIR /app
 COPY --from=build /app ./
 EXPOSE 8080/tcp
 ENV ASPNETCORE_URLS=http://+:8080
+ENV ASPNETCORE_ENVIRONMENT=Production
 # RUN chmod +x ./entrypoint.sh
 # CMD /bin/bash ./entrypoint.sh
 ENTRYPOINT ["dotnet", "app.dll"]
