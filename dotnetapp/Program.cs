@@ -57,7 +57,7 @@ namespace app
                 .WriteTo.Debug()
                 .WriteTo.Console()
                 .Enrich.WithProperty("Environment", environment)
-                .WriteTo.GrafanaLoki("http://test-loki.m-westerink-dev.svc.cluster.local:3100", textFormatter: new LokiJsonTextFormatter())
+                .WriteTo.GrafanaLoki("http://test-loki.m-westerink-dev.svc.cluster.local:3100")
                 .ReadFrom.Configuration(configuration)
                 .CreateLogger();
         }
