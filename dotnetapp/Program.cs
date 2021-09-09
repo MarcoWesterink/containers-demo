@@ -60,20 +60,20 @@ namespace app
                 .Enrich.WithMachineName()
                 .WriteTo.Debug()
                 .WriteTo.Console()
-                .WriteTo.Elasticsearch(ConfigureElasticSink(configuration, environment))
+                //.WriteTo.Elasticsearch(ConfigureElasticSink(configuration, environment))
                 .Enrich.WithProperty("Environment", environment)
                 .ReadFrom.Configuration(configuration)
                 .CreateLogger();
         }
 
-        private static ElasticsearchSinkOptions ConfigureElasticSink(IConfigurationRoot configuration, string environment)
-        {
-            return new ElasticsearchSinkOptions(new Uri(configuration["ElasticConfiguration:Uri"]))
-            {
-                AutoRegisterTemplate = true,
-                IndexFormat = $"{Assembly.GetExecutingAssembly().GetName().Name.ToLower().Replace(".", "-")}-{environment?.ToLower().Replace(".", "-")}-{DateTime.UtcNow:yyyy-MM}"
-            };
-        }
+        //private static ElasticsearchSinkOptions ConfigureElasticSink(IConfigurationRoot configuration, string environment)
+        //{
+        //    return new ElasticsearchSinkOptions(new Uri(configuration["ElasticConfiguration:Uri"]))
+        //    {
+        //        AutoRegisterTemplate = true,
+        //        IndexFormat = $"{Assembly.GetExecutingAssembly().GetName().Name.ToLower().Replace(".", "-")}-{environment?.ToLower().Replace(".", "-")}-{DateTime.UtcNow:yyyy-MM}"
+        //    };
+        //}
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
