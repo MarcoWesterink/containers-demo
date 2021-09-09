@@ -12,6 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Serilog;
 using Serilog.Sinks.Elasticsearch;
+using Serilog.Sinks.Grafana.Loki;
 
 namespace app
 {
@@ -61,6 +62,7 @@ namespace app
                 .WriteTo.Debug()
                 .WriteTo.Console()
                 //.WriteTo.Elasticsearch(ConfigureElasticSink(configuration, environment))
+                .WriteTo.GrafanaLoki("http://test-loki.m-westerink-dev.svc.cluster.local:3100")
                 .Enrich.WithProperty("Environment", environment)
                 .ReadFrom.Configuration(configuration)
                 .CreateLogger();
