@@ -20,22 +20,13 @@ namespace app.Controllers
 
         public IActionResult Index()
         {
-            _logger.LogInformation("Just some random log.");
+            _logger.LogWarning("The home page was loaded");
             return View();
         }
 
         public IActionResult Privacy()
         {
-            try
-            {
-                throw new Exception("Just some exception");
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "An unknown error occurred on the Privacy action of the HomeController");
-                throw;
-            }
-            //return View();
+            throw new Exception("Just some exception at the Policy page");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
